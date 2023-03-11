@@ -1,12 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+
+import About from './About/About';
 import './App.scss';
-import MyApp from './Header/Header';
+import Contact from './Contact/Contact';
+import Header from './Header/Header';
+import Portfolio from './Portfolio/Portfolio';
 
 function App() {
   return (
-    <main className="App">
-      <MyApp />
+    <main className='App'>
+      <Header />
+      <About />
+      <Portfolio />
+      <Contact/>
     </main>
   );
 }
