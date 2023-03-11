@@ -2,6 +2,7 @@
 import About from './About/About';
 import './App.scss';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Portfolio from './Portfolio/Portfolio';
 
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Portfolio />
       <Contact/>
+      <Footer />
     </main>
   );
 }
