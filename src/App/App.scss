@@ -1,10 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  overflow-x: hidden;
+}
+
 .App {
+  position: relative;
   text-align: center;
   background-color: black;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 .image-item {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
+.modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  background-color: white;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 12px;
+}

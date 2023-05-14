@@ -29,15 +29,12 @@ function Header() {
       switch (button.innerText.toLocaleLowerCase()) {
         case 'about':
           window.location.href = '#about';
-          console.log('about');
           break;
         case 'portfolio':
           window.location.href = '#portfolio';
-          console.log('portfolio');
           break;
         case 'contact':
           window.location.href = '#contact';
-          console.log('contact');
           break;
         default:
           break;

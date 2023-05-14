@@ -1,10 +1,11 @@
 
-import About from './About/About';
+import About from './About';
 import './App.scss';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact';
+import Footer from './Footer';
+import Header from './Header';
+import Modal from './Modal';
+import Portfolio from './Portfolio';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Portfolio />
       <Contact/>
       <Footer />
+      <Modal/>
     </main>
   );
 }
