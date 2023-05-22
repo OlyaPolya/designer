@@ -9,6 +9,19 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { ThemeProvider, createTheme } from '@mui/material';
+
+const theme = createTheme({
+  components: {
+    // Name of the component
+    MuiDialog: {
+      defaultProps: {
+        // The props to change the default for.
+         maxWidth: false, // No more ripple, on the whole application 💣!
+      },
+    },
+  },
+});
 
 export default function Modal() {
   const isOpen = useSelector((state: RootState) => state.modal.isOpen);
@@ -21,36 +34,41 @@ export default function Modal() {
 
 
   return (
-    <Dialog open={isOpen} onClose={handleClose} style={{ width: `100%` }}>
-      <Card sx={{ width: `${width + 15}px` }}>
-        <CardMedia component='iframe' height={`${height + 15}px`} max-width={`${width}px`} src={link} sx={{ border: 'none' }} scrolling='no' />
-        <CardContent>
-          <Typography gutterBottom variant='h5' component='div'>
-            {title}
-          </Typography>
-          <Typography variant='body2' color='text.secondary'>
-            {subtitle}
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button
-            variant='contained'
-            size='small'
-            onClick={handleClose}
-            sx={{
-              backgroundColor: 'black',
-              '&:hover': {
-                backgroundColor: '#FC4F4F',
-              },
-            }}
-          >
-            Close
-          </Button>
-        </CardActions>
-      </Card>
-    </Dialog>
+    <ThemeProvider theme={theme}>
+      <Dialog open={isOpen} onClose={handleClose}>
+        <Card sx={{ width: `${width + 15}px` }}>
+          <CardMedia component='iframe' height={`${height + 15}px`} max-width={`${width}px`} src={link} sx={{ border: 'none' }} scrolling='no' />
+          <CardContent>
+            <Typography gutterBottom variant='h5' component='div'>
+              {title}
+            </Typography>
+            <Typography variant='body2' color='text.secondary'>
+              {subtitle}
+            </Typography>
+          </CardContent>
+          <CardActions sx={{ justifyContent: 'flex-end' }}>
+            <Button
+              variant='contained'
+              size='small'
+              onClick={handleClose}
+              sx={{
+                backgroundColor: 'black',
+                '&:hover': {
+                  backgroundColor: '#FC4F4F',
+                },
+              }}
+            >
+              Close
+            </Button>
+          </CardActions>
+        </Card>
+      </Dialog>
+    </ThemeProvider>
   );
 }
+
+
+
 
 
 
