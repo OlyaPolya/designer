@@ -13,7 +13,7 @@ const items = [
   },
   {
     img: './SAMPLE_PICTURES/2.png',
-    link: '/SAMPLE_BANNERS/concept_auto_parts/index.html',
+    link: './SAMPLE_BANNERS/concept_auto_parts/index.html',
     title: 'Auto parts',
     subtitle: '',
     width: 240,
@@ -23,7 +23,7 @@ const items = [
   },
   {
     img: './SAMPLE_PICTURES/6.png',
-    link: './SAMPLE_BANNERS/magnit_bear_tires/index.html',
+    link: 'SAMPLE_BANNERS/magnit_bear_tires/index.html',
     title: 'Magnit bear tires',
     subtitle: '',
     width: 240,
@@ -44,7 +44,7 @@ const items = [
   {
     img: './SAMPLE_PICTURES/4.png',
     link: './SAMPLE_BANNERS/kronos_dismantle/index.html',
-    title: 'kronos_dismantle',
+    title: 'kronos dismantle',
     subtitle: '',
     width: 240,
     height: 400,
@@ -155,6 +155,7 @@ const items = [
 
 
 export default items;
+
 
 
 
