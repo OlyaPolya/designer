@@ -10,15 +10,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-//type ModalProp = { onClose: () => void };
-
 export default function Modal() {
   const isOpen = useSelector((state: RootState) => state.modal.isOpen);
   const { link, title, subtitle, width, height } = useSelector((state: RootState) => state.banner);
   const dispatch = useDispatch();
-
-  //console.log(process.env.PUBLIC_URL + link);
-
 
   const handleClose = () => {
     dispatch(close());
@@ -26,9 +21,9 @@ export default function Modal() {
 
 
   return (
-    <Dialog open={isOpen} onClose={handleClose} style={{ width: '100%' }}>
-      <Card sx={{ width: width }}>
-        <CardMedia component='iframe' height={`${height}px`} width={`${width}px`} src={link} sx={{ border: 'none' }} scrolling='no'/>
+    <Dialog open={isOpen} onClose={handleClose} style={{ width: `100%` }}>
+      <Card sx={{ width: `${width + 15}px` }}>
+        <CardMedia component='iframe' height={`${height + 15}px`} max-width={`${width}px`} src={link} sx={{ border: 'none' }} scrolling='no' />
         <CardContent>
           <Typography gutterBottom variant='h5' component='div'>
             {title}
@@ -38,7 +33,17 @@ export default function Modal() {
           </Typography>
         </CardContent>
         <CardActions sx={{ justifyContent: 'flex-end' }}>
-          <Button size='small' onClick={handleClose}>
+          <Button
+            variant='contained'
+            size='small'
+            onClick={handleClose}
+            sx={{
+              backgroundColor: 'black',
+              '&:hover': {
+                backgroundColor: '#FC4F4F',
+              },
+            }}
+          >
             Close
           </Button>
         </CardActions>
@@ -46,6 +51,26 @@ export default function Modal() {
     </Dialog>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

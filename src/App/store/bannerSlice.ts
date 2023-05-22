@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import { RootState } from './index';
 
 export interface State {
   img: string;
@@ -37,7 +36,6 @@ export const bannerSlice = createSlice({
 });
 
 export const { setBanner } = bannerSlice.actions;
-//export const selectCount = (state: RootState) => state.counter.value;
 
 export default bannerSlice.reducer;
 

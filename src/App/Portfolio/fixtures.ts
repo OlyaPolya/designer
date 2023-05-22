@@ -22,7 +22,7 @@ const items = [
     rows: 40,
   },
   {
-    img: './SAMPLE_PICTURES/6.png',
+    img: './SAMPLE_PICTURES/3.png',
     link: 'SAMPLE_BANNERS/magnit_bear_tires/index.html',
     title: 'Magnit bear tires',
     subtitle: '',
@@ -32,7 +32,7 @@ const items = [
     rows: 40,
   },
   {
-    img: './SAMPLE_PICTURES/3.png',
+    img: './SAMPLE_PICTURES/4.png',
     link: './SAMPLE_BANNERS/kronos_car_giveaway/index.html',
     title: 'Kronos car giveaway',
     subtitle: '',
@@ -42,7 +42,7 @@ const items = [
     rows: 40,
   },
   {
-    img: './SAMPLE_PICTURES/4.png',
+    img: './SAMPLE_PICTURES/5.png',
     link: './SAMPLE_BANNERS/kronos_dismantle/index.html',
     title: 'kronos dismantle',
     subtitle: '',
@@ -53,7 +53,7 @@ const items = [
   },
 
   {
-    img: './SAMPLE_PICTURES/5.png',
+    img: './SAMPLE_PICTURES/6.png',
     link: './SAMPLE_BANNERS/kronos_headache/index.html',
     title: 'Kronos headache',
     subtitle: '',
@@ -155,6 +155,12 @@ const items = [
 
 
 export default items;
+
+
+
+
+
+
 
 
 
