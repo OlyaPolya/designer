@@ -1,22 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-
-export interface State {
-  img: string;
-  link: string;
-  title: string;
-  subtitle: string;
-  width: number;
-  height: number;
-}
+import { State } from '../Portfolio/interfaces'
 
 const initialState: State = {
-  img: './SAMPLE_PICTURES/2.png',
-  link: './SAMPLE_BANNERS/burger_club/index.html',
-  title: 'image',
-  subtitle: 'subtitle',
-  width: 400,
-  height: 200,
+  img: '',
+  link: '',
+  title: '',
+  subtitle: '',
+  width: 0,
+  height: 0,
 };
 
 export const bannerSlice = createSlice({

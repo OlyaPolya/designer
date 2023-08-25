@@ -1,26 +1,17 @@
-import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { useState } from 'react';
-import { Box, ImageListItemBar, } from '@mui/material';
+import { ImageListItemBar, } from '@mui/material';
 import { open } from '../../store/modalSlice';
 import { useDispatch } from 'react-redux';
 import { setBanner } from '../../store/bannerSlice';
 import { srcset } from '../utils';
-import { SIZE_CELL } from '../constants';
+import { Item as ItemI } from '../interfaces';
+import { ROW_HEIGHT } from '../constants';
+
 
 type ItemProp = {
-  item: {
-    img: string;
-    link: string;
-    title: string;
-    subtitle: string;
-    width: number;
-    height: number;
-    rows: number;
-    cols: number;
-  };
+  item: ItemI;
 };
-
 
 
 function Item({ item }: ItemProp) {
@@ -36,6 +27,9 @@ function Item({ item }: ItemProp) {
   };
 
   const openModal = () => {
+    if (item.link.length === 0) {
+      return;
+    }
     dispatch(setBanner(item));
     dispatch(open());
   };
@@ -47,7 +41,7 @@ function Item({ item }: ItemProp) {
         rows={item.rows}
         sx={{
           overflow: 'hidden',
-          borderRadius: '15px',
+          borderRadius: '32px',
           '&:hover': {
             cursor: 'pointer',
           },
@@ -57,7 +51,7 @@ function Item({ item }: ItemProp) {
         onMouseOut={handleMouseOut}
         onClick={openModal}
       >
-        <img {...srcset(item.img, 10, item.rows, item.cols)} alt={item.title} loading='lazy' style={{ transition: '0.3s', borderRadius: '15px',  }} className={isHovering ? `image-item` : ''} />
+        <img {...srcset(item.img, ROW_HEIGHT, item.rows, item.cols)} alt={item.title} loading='lazy' style={{ transition: '0.3s', borderRadius: '15px' }} className={isHovering ? `image-item` : ''} />
         {isHovering && <ImageListItemBar title={item.title} />}
       </ImageListItem>
     </>
@@ -65,17 +59,6 @@ function Item({ item }: ItemProp) {
 }
 
 export default Item;
-
-/*
-cols?: number;
-Height of the item in number of grid rows.
-
-rows?: number;
-The system prop that allows defining system overrides as well as additional CSS styles.
-
-
- SIZE_CELL * Cols.DESKTOP + PADDING_BETWEEN_CELL * (Cols.DESKTOP - 1),
-*/
 
 
 

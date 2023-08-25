@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import { RootState } from '../store';
@@ -13,11 +12,9 @@ import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme({
   components: {
-    // Name of the component
     MuiDialog: {
       defaultProps: {
-        // The props to change the default for.
-         maxWidth: false, // No more ripple, on the whole application 💣!
+         maxWidth: false,
       },
     },
   },

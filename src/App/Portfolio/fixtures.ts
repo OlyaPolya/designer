@@ -1,25 +1,45 @@
-// 1COLS(height)=1ROWS(width)=10px
+// 1 rows == 1 cols == 142px
 
-const items = [
+export const itemsList = [
   {
     img: './SAMPLE_PICTURES/1.png',
     link: './SAMPLE_BANNERS/burger_club/index.html',
-    title: 'Burger club',
+    title: 'Blackwood',
+    subtitle: 'Blackwood',
+    width: 800,
+    height: 90,
+    cols: 2,
+    rows: 2,
+  },
+  {
+    img: './SAMPLE_PICTURES/1.png',
+    link: './SAMPLE_BANNERS/burger_club/index.html',
+    title: 'Girl',
     subtitle: 'Burger club advertising',
     width: 800,
     height: 90,
-    cols: 80,
-    rows: 9,
+    cols: 2,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/2.png',
+    link: '',
+    title: 'Upwork',
+    subtitle: '',
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
   },
   {
     img: './SAMPLE_PICTURES/2.png',
     link: './SAMPLE_BANNERS/concept_auto_parts/index.html',
-    title: 'Auto parts',
+    title: 'UFO',
     subtitle: '',
     width: 240,
     height: 400,
-    cols: 24,
-    rows: 40,
+    cols: 1,
+    rows: 1,
   },
   {
     img: './SAMPLE_PICTURES/3.png',
@@ -28,28 +48,28 @@ const items = [
     subtitle: '',
     width: 240,
     height: 400,
-    cols: 24,
-    rows: 40,
+    cols: 1,
+    rows: 1,
   },
   {
     img: './SAMPLE_PICTURES/4.png',
-    link: './SAMPLE_BANNERS/kronos_car_giveaway/index.html',
-    title: 'Kronos car giveaway',
+    link: '',
+    title: '17 years',
     subtitle: '',
     width: 240,
     height: 400,
-    cols: 24,
-    rows: 40,
+    cols: 1,
+    rows: 1,
   },
   {
     img: './SAMPLE_PICTURES/5.png',
     link: './SAMPLE_BANNERS/kronos_dismantle/index.html',
-    title: 'kronos dismantle',
+    title: 'WAGNERS',
     subtitle: '',
     width: 240,
     height: 400,
-    cols: 24,
-    rows: 40,
+    cols: 2,
+    rows: 1,
   },
 
   {
@@ -59,29 +79,79 @@ const items = [
     subtitle: '',
     width: 240,
     height: 400,
-    cols: 24,
-    rows: 40,
+    cols: 2,
+    rows: 2,
   },
 
   {
     img: './SAMPLE_PICTURES/7.png',
     link: './SAMPLE_BANNERS/marussya/index.html',
-    title: 'Marussya',
+    title: 'QUAD',
     subtitle: '',
     width: 240,
     height: 400,
-    cols: 24,
-    rows: 40,
+    cols: 1,
+    rows: 1,
   },
   {
     img: './SAMPLE_PICTURES/8.png',
-    link: './SAMPLE_BANNERS/pomodoro/index.html',
-    title: 'Pomodoro',
+    link: '',
+    title: 'Discount',
     subtitle: '',
     width: 800,
     height: 90,
-    cols: 80,
-    rows: 9,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/7.png',
+    link: './SAMPLE_BANNERS/marussya/index.html',
+    title: 'LAVANDA',
+    subtitle: '',
+    width: 240,
+    height: 400,
+    cols: 2,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/7.png',
+    link: './SAMPLE_BANNERS/marussya/index.html',
+    title: 'marussya',
+    subtitle: '',
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/7.png',
+    link: './SAMPLE_BANNERS/marussya/index.html',
+    title: 'Кронос',
+    subtitle: '',
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/7.png',
+    link: './SAMPLE_BANNERS/marussya/index.html',
+    title: 'UFO',
+    subtitle: '',
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/7.png',
+    link: './SAMPLE_BANNERS/marussya/index.html',
+    title: 'NINJA',
+    subtitle: '',
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
   },
 ];
 
@@ -98,63 +168,6 @@ const items = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default items;
 
 
 
