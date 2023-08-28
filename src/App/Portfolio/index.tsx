@@ -13,7 +13,7 @@ export default function Portfolio() {
   // }, 0)
 
   return (
-    <Box component='div' sx={{ p: 3, bgcolor: 'black', paddingTop: '0' }} id='portfolio'>
+    <Box component='div' sx={{ p: 3, paddingTop: '0' }} id='portfolio'>
       <Typography variant='h5' sx={{ color: 'white', p: 3 }}>
         PORTFOLIO
       </Typography>

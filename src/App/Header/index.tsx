@@ -10,7 +10,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const SITE_SECTIONS = ['About', 'Portfolio', 'Contact'];
+
+const SITE_SECTIONS = [
+  { title: 'Portfolio', color: '#bc4ad7' },
+  { title: 'Contacts', color: '#ffffff' },
+];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -27,9 +31,6 @@ function Header() {
     if (event.target) {
       const button = event.target as HTMLButtonElement;
       switch (button.innerText.toLocaleLowerCase()) {
-        case 'about':
-          window.location.href = '#about';
-          break;
         case 'portfolio':
           window.location.href = '#portfolio';
           break;
@@ -44,33 +45,10 @@ function Header() {
   };
 
   return (
-    <AppBar
-      position='sticky'
-      sx={{
-        bgcolor: 'black',
-      }}
-    >
-      <Container maxWidth='xl'>
+    <AppBar position='sticky' sx={{backgroundColor: 'inherit'}}>
         <Toolbar disableGutters>
-          <Typography
-            variant='h6'
-            noWrap
-            component='a'
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Vitaly Polyansky
-          </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton size='large' aria-label='account of current user' aria-controls='menu-appbar' aria-haspopup='true' onClick={handleOpenNavMenu} color='inherit'>
+            <IconButton size='large' aria-controls='menu-appbar' aria-haspopup='true' onClick={handleOpenNavMenu} color='inherit'>
               <MenuIcon />
             </IconButton>
             <Menu
@@ -92,49 +70,44 @@ function Header() {
               }}
             >
               {SITE_SECTIONS.map((section) => (
-                <MenuItem key={section} onClick={(event) => { showSection(event)}}>
-                  <Typography textAlign='center'>{section}</Typography>
+                <MenuItem
+                  key={section.title}
+                  onClick={(event) => {
+                    showSection(event);
+                  }}
+                >
+                  <Typography textAlign='center'>{section.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant='h5'
-            noWrap
-            component='a'
-            href=''
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Vitaly Polyansky
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'right', gap: 10 }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'right', gap: '10px' }}>
             {SITE_SECTIONS.map((section) => (
               <Button
-                key={section}
+                key={section.title}
                 onClick={(event) => {
                   showSection(event);
                 }}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ marginBottom: 2, color: section.color, display: 'block', fontSize: '18px', textTransform: 'none', marginTop: '12px', padding: '6px 0px' }}
               >
-                {section}
+                {section.title}
               </Button>
             ))}
           </Box>
         </Toolbar>
-      </Container>
     </AppBar>
   );
 }
 export default Header;
+
+
+
+
+
+
+
+
+
 
 
 

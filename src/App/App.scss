@@ -11,13 +11,16 @@ ul {
 
 .root {
   overflow-x: hidden;
+
 }
 
 .App {
   position: relative;
   text-align: center;
-  background-color: black;
   min-height: 100vh;
+  background-image: url(./BACK.jpg);
+
+
 }
 
 .image-item {
@@ -35,6 +38,3 @@ ul {
   border-radius: 12px;
 }
 
-// .MuiPaper-root-MuiDialog-paper {
-//   max-width: 100%!important
-// }
