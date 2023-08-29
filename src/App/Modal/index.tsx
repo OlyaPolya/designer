@@ -49,9 +49,9 @@ export default function Modal() {
               size='small'
               onClick={handleClose}
               sx={{
-                backgroundColor: 'black',
+                backgroundColor: '#bc4ad7',
                 '&:hover': {
-                  backgroundColor: '#FC4F4F',
+                  backgroundColor: '#cd50eb',
                 },
               }}
             >

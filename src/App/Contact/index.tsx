@@ -1,23 +1,39 @@
 import { Box, Typography } from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
-import TelegramIcon from '@mui/icons-material/Telegram';
+
+const style = { color: 'white', lineHeight: 1.2, fontSize: '14px', fontFamily: 'Roboto', textAlign: 'left' };
+
 
 function Contact() {
   return (
-    <Box component='div' sx={{ p: 3 }} id='contact'>
-      <Typography variant='h5' sx={{ p: 3, color: 'white' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <Typography variant='h3' sx={{ color: 'white', textAlign: 'left' }} id='contacts'>
         Get in touch with me
       </Typography>
-      <Typography sx={{ color: 'white', fontWeight: 500, letterSpacing: '.1rem', display: { xs: 'flex' }, alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+      <Typography sx={style}>
         In the last years I have helped hundreds of clients to turn their static advertising mock ups into professionally animated display ads which attract attention, deliver a message and resolve business needs. And that's what I'm passionate
         about.
       </Typography>
-      <Typography sx={{ color: 'white', fontWeight: 500, letterSpacing: '.1rem', display: { xs: 'flex' }, alignItems: 'center', justifyContent: 'center', gap: 4 }}>You are welcome with any details request by superpolyansky@gmail.com</Typography>
+      <Typography sx={style}>
+        You are welcome with any details request by{' '}
+        <Box component='span' sx={{ color: '#bc4ad7', textDecoration: 'underline' }}>
+          superpolyansky@gmail.com
+        </Box>
+      </Typography>
     </Box>
   );
 }
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
 
 
 

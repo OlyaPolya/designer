@@ -43,7 +43,6 @@ function Item({ item }: ItemProp) {
           '&:hover': {
             cursor: 'pointer',
           },
-          maxHeight: `${item.height}px`,
         }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}

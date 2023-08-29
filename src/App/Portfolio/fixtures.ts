@@ -2,7 +2,7 @@
 
 export const itemsList = [
   {
-    img: './SAMPLE_PICTURES/1.png',
+    img: './SAMPLE_PICTURES/blackwood.jpg',
     link: './SAMPLE_BANNERS/burger_club/index.html',
     title: 'Blackwood',
     subtitle: 'Blackwood',
@@ -12,7 +12,7 @@ export const itemsList = [
     rows: 2,
   },
   {
-    img: './SAMPLE_PICTURES/1.png',
+    img: './SAMPLE_PICTURES/nails.jpg',
     link: './SAMPLE_BANNERS/burger_club/index.html',
     title: 'Girl',
     subtitle: 'Burger club advertising',
@@ -22,7 +22,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/2.png',
+    img: './SAMPLE_PICTURES/UPWORK.jpg',
     link: '',
     title: 'Upwork',
     subtitle: '',
@@ -32,7 +32,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/2.png',
+    img: './SAMPLE_PICTURES/NDA.jpg',
     link: './SAMPLE_BANNERS/concept_auto_parts/index.html',
     title: 'UFO',
     subtitle: '',
@@ -42,7 +42,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/3.png',
+    img: './SAMPLE_PICTURES/magnit_tires.jpg',
     link: 'SAMPLE_BANNERS/magnit_bear_tires/index.html',
     title: 'Magnit bear tires',
     subtitle: '',
@@ -52,7 +52,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/4.png',
+    img: './SAMPLE_PICTURES/YEARS.jpg',
     link: '',
     title: '17 years',
     subtitle: '',
@@ -62,7 +62,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/5.png',
+    img: './SAMPLE_PICTURES/wagners.jpg',
     link: './SAMPLE_BANNERS/kronos_dismantle/index.html',
     title: 'WAGNERS',
     subtitle: '',
@@ -73,7 +73,7 @@ export const itemsList = [
   },
 
   {
-    img: './SAMPLE_PICTURES/6.png',
+    img: './SAMPLE_PICTURES/kronos_headache.png',
     link: './SAMPLE_BANNERS/kronos_headache/index.html',
     title: 'Kronos headache',
     subtitle: '',
@@ -84,7 +84,7 @@ export const itemsList = [
   },
 
   {
-    img: './SAMPLE_PICTURES/7.png',
+    img: './SAMPLE_PICTURES/quad.png',
     link: './SAMPLE_BANNERS/marussya/index.html',
     title: 'QUAD',
     subtitle: '',
@@ -94,7 +94,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/8.png',
+    img: './SAMPLE_PICTURES/accum.png',
     link: '',
     title: 'Discount',
     subtitle: '',
@@ -104,7 +104,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/7.png',
+    img: './SAMPLE_PICTURES/lavanda.png',
     link: './SAMPLE_BANNERS/marussya/index.html',
     title: 'LAVANDA',
     subtitle: '',
@@ -114,7 +114,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/7.png',
+    img: './SAMPLE_PICTURES/marussia.png',
     link: './SAMPLE_BANNERS/marussya/index.html',
     title: 'marussya',
     subtitle: '',
@@ -124,7 +124,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/7.png',
+    img: './SAMPLE_PICTURES/kronos_dismantle.png',
     link: './SAMPLE_BANNERS/marussya/index.html',
     title: 'Кронос',
     subtitle: '',
@@ -134,7 +134,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/7.png',
+    img: './SAMPLE_PICTURES/NDA.jpg',
     link: './SAMPLE_BANNERS/marussya/index.html',
     title: 'UFO',
     subtitle: '',
@@ -144,7 +144,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/7.png',
+    img: './SAMPLE_PICTURES/autoparts.png',
     link: './SAMPLE_BANNERS/marussya/index.html',
     title: 'NINJA',
     subtitle: '',
@@ -154,6 +154,21 @@ export const itemsList = [
     rows: 1,
   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

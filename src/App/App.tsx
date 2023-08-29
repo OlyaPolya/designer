@@ -9,20 +9,32 @@ import Modal from './Modal';
 import Portfolio from './Portfolio';
 import '@fontsource/alfa-slab-one';
 import { Box } from '@mui/material';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+declare module '@mui/material/styles';
+
 
 const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#ffffff',
+    },
+    secondary: {
+      main: '#bc4ad7',
+    },
+  },
+
   typography: {
-    fontFamily: 'Alfa Slab One',
+    fontFamily: 'Alfa Slab One, Roboto',
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
-          font-family: 'Alfa Slab One';
-          font-style: cursive;
+          font-family: 'Alfa Slab One, Roboto';
+          font-style: sans-serif;
           font-display: swap;
           font-weight: 400;
-
         }`,
     },
   },
@@ -38,8 +50,9 @@ function App() {
         className='App'
       >
         <main style={{
-          maxWidth: '617px',
+          maxWidth: '637px',
           margin: '0 auto',
+          padding: '0 10px'
         }}>
           <Header />
           <About />
