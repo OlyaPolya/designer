@@ -12,6 +12,9 @@ type ItemProp = {
   item: ItemI;
 };
 
+// 1 rows == 1 cols == 142px
+const SECTION_SIZE = 142;
+
 function Item({ item }: ItemProp) {
   const [isHovering, setIsHovering] = useState(false);
   const dispatch = useDispatch();
@@ -48,7 +51,13 @@ function Item({ item }: ItemProp) {
         onMouseOut={handleMouseOut}
         onClick={openModal}
       >
-        <img {...srcset(item.img, ROW_HEIGHT, item.rows, item.cols)} alt={item.title} loading='lazy' style={{ transition: '0.3s', borderRadius: '15px' }} className={isHovering ? `image-item` : ''} />
+        <img
+          {...srcset(item.img, ROW_HEIGHT, item.rows, item.cols)}
+          alt={item.title}
+          loading='lazy'
+          style={{ transition: '0.3s', borderRadius: '32px', width: `${item.cols * SECTION_SIZE}px`, height: `${item.rows * SECTION_SIZE}px` }}
+          className={isHovering ? `image-item` : ''}
+        />
         {isHovering && item.link.length && <ImageListItemBar title={item.title} />}
       </ImageListItem>
     </>
