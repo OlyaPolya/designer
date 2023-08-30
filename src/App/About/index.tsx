@@ -11,9 +11,9 @@ function About() {
       </Typography>
       <Typography sx={{ color: 'white', textAlign: 'left', lineHeight: 1.2, fontSize: '14px', fontFamily: 'Roboto' }}>
         Hello, I'm Vitaly Polyansky and I'm an expert in creating animated HTML5 Display Ads. I'm trusted to work on master-animations for many of Top100 USA brands, TV Channels and AAA+ games. Solid 17 years experience, accuracy and quick turnaround
-        are my core strengths. Will be happy to help your in resolving your business needs. Feel free to{' '}
+        are my core strengths. Will be happy to help your in resolving your business needs. Feel&nbsp;free&nbsp;to&nbsp;
         <a href='#contacts' style={{ color: '#bc4ad7' }}>
-          get in touch with me.
+          get&nbsp;in&nbsp;touch&nbsp;with&nbsp;me.
         </a>
       </Typography>
     </Box>
@@ -21,6 +21,17 @@ function About() {
 }
 
 export default About;
+
+
+
+
+
+
+
+
+
+
+
 
 
 

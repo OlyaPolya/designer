@@ -1,4 +1,3 @@
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import { RootState } from '../store';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,13 +7,13 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { Box, ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme({
   components: {
     MuiDialog: {
       defaultProps: {
-         maxWidth: false,
+        maxWidth: false,
       },
     },
   },
@@ -27,115 +26,38 @@ export default function Modal() {
 
   const handleClose = () => {
     dispatch(close());
-  }
-
+  };
 
   return (
     <ThemeProvider theme={theme}>
-      <Dialog open={isOpen} onClose={handleClose}>
-        <Card sx={{ width: `${width + 15}px` }}>
-          <CardMedia component='iframe' height={`${height + 15}px`} max-width={`${width}px`} src={link} sx={{ border: 'none' }} scrolling='no' />
-          <CardContent>
-            <Typography gutterBottom variant='h5' component='div'>
-              {title}
-            </Typography>
-            <Typography variant='body2' color='text.secondary'>
-              {subtitle}
-            </Typography>
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'flex-end' }}>
-            <Button
-              variant='contained'
-              size='small'
-              onClick={handleClose}
-              sx={{
-                backgroundColor: '#bc4ad7',
-                '&:hover': {
-                  backgroundColor: '#cd50eb',
-                },
-              }}
-            >
-              Close
-            </Button>
-          </CardActions>
+      <Dialog open={isOpen} onClose={handleClose} sx={{bgcolor: 'rgba(0, 0, 0, 0.5)'}}>
+        <Card onClick={handleClose}>
+          <Box sx={{ width: `${width}px`, margin: '10px' }}>
+            <Box sx={{ position: 'relative' }}>
+              <CardMedia
+                component='iframe'
+                height={`${height}px`}
+                width={`${width}px`}
+                src={link}
+                sx={{
+                  border: 'none',
+                }}
+                scrolling='no'
+              />
+              <Box height={`${height}px`} width={`${width}px`} sx={{ position: 'absolute', top: 0, left: 0 }}></Box>
+            </Box>
+            <CardContent>
+              <Typography gutterBottom variant='h5' sx={{ textAlign: 'center' }}>
+                {title}
+              </Typography>
+              <Typography variant='body2' color='text.secondary' sx={{ textAlign: 'center' }}>
+                {subtitle}
+              </Typography>
+            </CardContent>
+            <CardActions sx={{ justifyContent: 'flex-end' }}></CardActions>
+          </Box>
         </Card>
       </Dialog>
     </ThemeProvider>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

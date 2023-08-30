@@ -11,7 +11,6 @@ import '@fontsource/alfa-slab-one';
 import { Box } from '@mui/material';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
-declare module '@mui/material/styles';
 
 
 const theme = createTheme({

@@ -31,6 +31,7 @@ export default function Portfolio() {
   useEffect(() => {
         window.addEventListener('resize', updateTableOption);
         return () => window.removeEventListener('resize', updateTableOption);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

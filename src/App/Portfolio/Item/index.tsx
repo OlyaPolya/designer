@@ -14,6 +14,7 @@ type ItemProp = {
 
 // 1 rows == 1 cols == 142px
 const SECTION_SIZE = 142;
+const GAP_BETWEEN_TABLE_SECTION = 18;
 
 function Item({ item }: ItemProp) {
   const [isHovering, setIsHovering] = useState(false);
@@ -38,6 +39,7 @@ function Item({ item }: ItemProp) {
   return (
     <>
       <ImageListItem
+        className={isHovering ? `image-item` : ''}
         cols={item.cols}
         rows={item.rows}
         sx={{
@@ -51,14 +53,8 @@ function Item({ item }: ItemProp) {
         onMouseOut={handleMouseOut}
         onClick={openModal}
       >
-        <img
-          {...srcset(item.img, ROW_HEIGHT, item.rows, item.cols)}
-          alt={item.title}
-          loading='lazy'
-          style={{ transition: '0.3s', borderRadius: '32px', width: `${item.cols * SECTION_SIZE}px`, height: `${item.rows * SECTION_SIZE}px` }}
-          className={isHovering ? `image-item` : ''}
-        />
-        {isHovering && item.link.length && <ImageListItemBar title={item.title} />}
+        <img {...srcset(item.img, ROW_HEIGHT, item.rows, item.cols)} alt={item.title} loading='lazy' style={{ transition: '0.3s', borderRadius: '32px', height: `${item.rows * SECTION_SIZE + (item.rows - 1) * GAP_BETWEEN_TABLE_SECTION}px` }} />
+        {isHovering && item.link.length !==0 && <ImageListItemBar title={item.title} sx={{ borderRadius: '0 0 32px 32px', background: 'linear-gradient(0deg,  rgba(0,0,0,0.7), transparent)' }} />}
       </ImageListItem>
     </>
   );
