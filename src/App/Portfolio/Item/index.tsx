@@ -53,7 +53,7 @@ function Item({ item }: ItemProp) {
         onClick={openModal}
       >
         <img {...srcset(item.img, PORTFOLIO.CELL.HEIGHT, item.rows, item.cols)} alt={item.title} loading='lazy' style={{ transition: '0.2s', borderRadius: '32px', objectFit: 'fill' }} />
-        {isHovering && item.link.length !== 0 && <ImageListItemBar title={item.title} sx={{ borderRadius: '0 0 32px 32px', background: 'linear-gradient(0deg,  rgba(0,0,0,0.7), transparent)' }} />}
+        {isHovering && item.link.length && item.title.length && <ImageListItemBar title={item.title} sx={{ borderRadius: '0 0 32px 32px', background: 'linear-gradient(0deg,  rgba(0,0,0,0.7), transparent)' }} />}
       </ImageListItem>
     </>
   );

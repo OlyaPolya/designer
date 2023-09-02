@@ -32,12 +32,12 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/NDA.jpg',
-    link: './SAMPLE_PICTURES/NDA.jpg',
-    title: 'NDA Project',
+    img: './SAMPLE_PICTURES/nda_150.jpg',
+    link: './SAMPLE_PICTURES/NDA_BIG.jpg',
+    title: '',
     subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
-    width: 142,
-    height: 142,
+    width: 300,
+    height: 250,
     cols: 1,
     rows: 1,
   },
@@ -134,12 +134,12 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/NDA.jpg',
-    link: './SAMPLE_PICTURES/NDA.jpg',
-    title: 'NDA Project',
+    img: './SAMPLE_PICTURES/nda_150.jpg',
+    link: './SAMPLE_PICTURES/NDA_BIG.jpg',
+    title: '',
     subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
-    width: 142,
-    height: 142,
+    width: 300,
+    height: 250,
     cols: 1,
     rows: 1,
   },
@@ -154,46 +154,63 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/NDA.jpg',
-    link: './SAMPLE_PICTURES/NDA.jpg',
-    title: 'NDA Project',
+    img: './SAMPLE_PICTURES/nda_150.jpg',
+    link: './SAMPLE_PICTURES/NDA_BIG.jpg',
+    title: '',
     subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
-    width: 142,
-    height: 142,
+    width: 300,
+    height: 250,
     cols: 1,
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/NDA.jpg',
-    link: './SAMPLE_PICTURES/NDA.jpg',
-    title: 'NDA Project',
+    img: './SAMPLE_PICTURES/nda_150.jpg',
+    link: './SAMPLE_PICTURES/NDA_BIG.jpg',
+    title: '',
     subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
-    width: 142,
-    height: 142,
+    width: 300,
+    height: 250,
     cols: 1,
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/nda_40.jpg',
-    link: './SAMPLE_PICTURES/NDA.jpg',
-    title: 'NDA Project',
+    img: './SAMPLE_PICTURES/nda_40_150.jpg',
+    link: './SAMPLE_PICTURES/NDA_BIG.jpg',
+    title: '',
     subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
-    width: 142,
-    height: 142,
+    width: 300,
+    height: 250,
     cols: 1,
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/nda_70.jpg',
-    link: './SAMPLE_PICTURES/NDA.jpg',
-    title: 'NDA Project',
+    img: './SAMPLE_PICTURES/nda_70_150.jpg',
+    link: './SAMPLE_PICTURES/NDA_BIG.jpg',
+    title: '',
     subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
-    width: 142,
-    height: 142,
+    width: 300,
+    height: 250,
     cols: 1,
     rows: 1,
   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
