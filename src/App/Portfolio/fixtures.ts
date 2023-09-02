@@ -43,7 +43,7 @@ export const itemsList = [
   },
   {
     img: './SAMPLE_PICTURES/magnit_tires.jpg',
-    link: './SAMPLE_BANNERS/magnit_bear_tires/index.html',
+    link: './SAMPLE_BANNERS/magnit_bear_tires/240-400/1.html',
     title: 'Magnit',
     subtitle: 'Used tires from Japan',
     width: 240,
@@ -74,7 +74,7 @@ export const itemsList = [
 
   {
     img: './SAMPLE_PICTURES/kronos_headache.png',
-    link: './SAMPLE_BANNERS/kronos_headache/index.html',
+    link: './SAMPLE_BANNERS/kronos_headache/240-400/1.html',
     title: 'Kronos headache',
     subtitle: 'When searching auto parts is headache',
     width: 240,
@@ -95,7 +95,7 @@ export const itemsList = [
   },
   {
     img: './SAMPLE_PICTURES/accum.png',
-    link: './SAMPLE_BANNERS/vpoloborota_battery_store/index.html',
+    link: './SAMPLE_BANNERS/vpoloborota_battery_store/240-400/1.html',
     title: 'Vpoloborota',
     subtitle: 'Batteries and auto parts',
     width: 240,
@@ -115,7 +115,7 @@ export const itemsList = [
   },
   {
     img: './SAMPLE_PICTURES/marussia.png',
-    link: './SAMPLE_BANNERS/marussya/index.html',
+    link: './SAMPLE_BANNERS/marussya/240-400/1.html',
     title: 'Marussya',
     subtitle: 'Food delivery',
     width: 240,
@@ -125,7 +125,7 @@ export const itemsList = [
   },
   {
     img: './SAMPLE_PICTURES/kronos_dismantle.png',
-    link: './SAMPLE_BANNERS/kronos_dismantle/index.html',
+    link: './SAMPLE_BANNERS/kronos_dismantle/240-400/1.html',
     title: 'Kronos',
     subtitle: 'Cars dismantling',
     width: 240,
@@ -145,7 +145,7 @@ export const itemsList = [
   },
   {
     img: './SAMPLE_PICTURES/autoparts.png',
-    link: './SAMPLE_BANNERS/concept_auto_parts/index.html',
+    link: './SAMPLE_BANNERS/concept_auto_parts/240-400/1.html',
     title: 'Concept',
     subtitle: 'Auto parts form Japan',
     width: 240,
@@ -194,124 +194,4 @@ export const itemsList = [
     rows: 1,
   },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
