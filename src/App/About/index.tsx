@@ -5,7 +5,7 @@ function About() {
   return (
     <Box component='div' sx={{ backgroundColor: 'inherit', margin: '10px auto' }}>
       <Typography variant='h3' sx={{ color: 'white', textAlign: 'left', lineHeight: 1, marginBottom: '20px' }}>
-        Great Display Ads
+        Great Display&nbsp;Ads
         <br />
         Motion Designer
       </Typography>
@@ -21,6 +21,7 @@ function About() {
 }
 
 export default About;
+
 
 
 

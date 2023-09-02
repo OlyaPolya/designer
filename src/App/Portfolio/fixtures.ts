@@ -22,7 +22,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/UPWORK.jpg',
+    img: './SAMPLE_PICTURES/upwork_150.jpg',
     link: '',
     title: 'Upwork',
     subtitle: '',
@@ -52,7 +52,7 @@ export const itemsList = [
     rows: 1,
   },
   {
-    img: './SAMPLE_PICTURES/YEARS.jpg',
+    img: './SAMPLE_PICTURES/years_150.jpg',
     link: '',
     title: '17 years',
     subtitle: '',
@@ -194,6 +194,8 @@ export const itemsList = [
     rows: 1,
   },
 ];
+
+
 
 
 
