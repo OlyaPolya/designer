@@ -3,22 +3,17 @@ import ImageList from '@mui/material/ImageList';
 import { Box } from '@mui/material';
 import Item from './Item';
 import { Item as ItemProp } from './interfaces';
-import { PADDING_BETWEEN_ITEMS, ROW_HEIGHT } from './constants';
+import { PORTFOLIO } from './constants';
 import { useEffect, useState } from 'react';
 
+const MOBILE_BREAK_POINT = 640;
+
 export default function Portfolio() {
-  const mobilBreakPoint = 640;
   const getTableOption = (width: number) => {
-    if (width < mobilBreakPoint) {
-      return {
-        columns: 2,
-        totalWidth: 311,
-      };
+    if (width < MOBILE_BREAK_POINT) {
+      return PORTFOLIO.MOBILE;
     } else {
-      return {
-        columns: 4,
-        totalWidth: 622,
-      };
+      return PORTFOLIO.DESKTOP;
     }
   };
 
@@ -35,16 +30,24 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <Box component='div' id='portfolio' sx={{ marginBottom: '35px' }}>
-      <ImageList sx={{ maxWidth: tableOption.totalWidth, margin: 'auto' }} variant='quilted' cols={tableOption.columns} rowHeight={ROW_HEIGHT} gap={PADDING_BETWEEN_ITEMS}>
-        {itemsList.map((item: ItemProp) => (
-          <Item item={item} key={item.img} />
+    <Box component='div' id='portfolio' sx={{ marginBottom: '50px' }}>
+      <ImageList sx={{ maxWidth: tableOption.WIDTH, margin: 'auto' }} variant='quilted' cols={tableOption.COLUMNS} rowHeight={PORTFOLIO.CELL.HEIGHT} gap={PORTFOLIO.ITEMS.PADDING}>
+        {itemsList.map((item: ItemProp, itemNumber) => (
+          <Item item={item} key={itemNumber} />
         ))}
       </ImageList>
     </Box>
   );
 
 }
+
+
+
+
+
+
+
+
 
 
 

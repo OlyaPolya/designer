@@ -5,7 +5,7 @@ const style = { color: 'white', lineHeight: 1.2, fontSize: '14px', fontFamily: '
 
 function Contact() {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '50px' }}>
       <Typography variant='h3' sx={{ color: 'white', textAlign: 'left' }} id='contacts'>
         Get in touch with me
       </Typography>

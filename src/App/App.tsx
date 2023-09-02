@@ -22,7 +22,6 @@ const theme = createTheme({
       main: '#bc4ad7',
     },
   },
-
   typography: {
     fontFamily: 'Alfa Slab One, Roboto',
   },
@@ -35,6 +34,11 @@ const theme = createTheme({
           font-display: swap;
           font-weight: 400;
         }`,
+    },
+    MuiDialog: {
+      defaultProps: {
+        maxWidth: false,
+      },
     },
   },
 });
@@ -49,7 +53,7 @@ function App() {
         className='App'
       >
         <main style={{
-          maxWidth: '637px',
+          maxWidth: '640px',
           margin: '0 auto',
           padding: '0 10px'
         }}>

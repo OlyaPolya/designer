@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 function About() {
   return (
-    <Box component='div' sx={{ backgroundColor: 'inherit', margin: '10px auto 15px auto' }}>
+    <Box component='div' sx={{ backgroundColor: 'inherit', margin: '10px auto' }}>
       <Typography variant='h3' sx={{ color: 'white', textAlign: 'left', lineHeight: 1, marginBottom: '20px' }}>
         Great Display Ads
         <br />

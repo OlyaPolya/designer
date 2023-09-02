@@ -153,7 +153,53 @@ export const itemsList = [
     cols: 1,
     rows: 1,
   },
+  {
+    img: './SAMPLE_PICTURES/NDA.jpg',
+    link: '',
+    title: 'NDA Project',
+    subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/NDA.jpg',
+    link: '',
+    title: 'NDA Project',
+    subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/nda_40.jpg',
+    link: '',
+    title: 'NDA Project',
+    subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: './SAMPLE_PICTURES/nda_70.jpg',
+    link: '',
+    title: 'NDA Project',
+    subtitle: `Really significant project is hidden here. Unfortunately I'm not allowed to uncover details of those great and impactful animated ads I produced within campaign for well know brand from USA Top100`,
+    width: 240,
+    height: 400,
+    cols: 1,
+    rows: 1,
+  },
 ];
+
+
+
+
+
+
 
 
 
