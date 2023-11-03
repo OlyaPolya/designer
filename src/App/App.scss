@@ -9,34 +9,46 @@ ul {
   padding: 0;
 }
 
-.root {
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
   overflow-x: hidden;
-}
-
-
-body {
-  margin: 0;
-  font-family: 'Alfa Slab One', cursive;
-}
-
-.App {
   position: relative;
   text-align: center;
+
   min-height: 100vh;
+  min-height: 100dvh;
   background-image: url(./BACK.jpg);
   background-color: black;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
+body {
+  margin: 0;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.App,
+.error {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 660px;
+}
+
 .image-item {
   overflow: hidden;
   transform: scale(1);
-  transition: all 1s ease-in-out
+  transition: all 1s ease-in-out;
 }
 
-.image-item:hover img  {
+.image-item:hover img {
   transform: scale(1.02);
 }
-
-

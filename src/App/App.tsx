@@ -11,7 +11,13 @@ import '@fontsource/alfa-slab-one';
 import { Box } from '@mui/material';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
+import { BrowserRouter, Route, Routes, useLoaderData } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { RootState } from './store';
+import { Outlet } from 'react-router-dom';
+import { itemsList } from './fixtures';
 
+// ЭТО ROOT
 
 const theme = createTheme({
   palette: {
@@ -40,30 +46,59 @@ const theme = createTheme({
         maxWidth: false,
       },
     },
+
+    // MuiIconButton: {
+    //   styleOverrides: {
+    //     root: {
+    //       '&:hover': {
+    //         backgroundColor: 'pink',
+    //       },
+    //     },
+    //   },
+    // },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          '&.MuiPaper-root': {
+            backgroundColor: 'transparent',
+          },
+        },
+      },
+    },
+    MuiCardMedia: {
+      styleOverrides: {
+        root: {
+          '&.MuiCardMedia-root': {
+            backgroundColor: 'black',
+          },
+        },
+      },
+    },
   },
 });
 
+
+// .css-4pp0nb-MuiPaper-root-MuiDialog-paper
 function App() {
+
+  //  const isOpen = useSelector((state: RootState) => state.modal.isOpen);
   return (
     <ThemeProvider theme={theme}>
-      <Box
-        sx={{
-          fontFamily: 'Alfa Slab One',
-        }}
-        className='App'
-      >
-        <main style={{
-          maxWidth: '640px',
-          margin: '0 auto',
-          padding: '0 10px'
-        }}>
+      <Box className='App'>
+        <header>
           <Header />
+        </header>
+        <main>
           <About />
           <Portfolio />
           <Contact />
-          <Footer />
-          <Modal />
         </main>
+        <footer>
+          <Footer />
+          <div id='detail'>
+            <Outlet />
+          </div>
+        </footer>
       </Box>
     </ThemeProvider>
   );

@@ -6,6 +6,10 @@ export function srcset(image: string, size: number, rows = 1, cols = 1) {
 }
 
 
+export function generateItemLink(title: string, itemNumber: number): string {
+  return `${title.replace(' ', '-')}-${itemNumber}`;
+};
+
 
 
 
