@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-hudochenkov/order"],
+  "rules": {
+    "selector-max-type": null
+  },
+   "ignoreFiles": ["**/*.js", "dist/*", "node_modules/*"]
+}
+
+
+
+
+
+
+
+
+

@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import App from './App/App';
-import { store } from './App/store';
-import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ErrorPage from './App/Error';
-import Modal from './App/Modal';
-import { loader as appLoader } from './App/Modal/index';
-
-// ЭТО MAIN
+import { Provider } from 'react-redux';
+import App from './App/App';
+import ErrorPage from './App/pages/Error';
+import Modal, { loader as appLoader } from './App/pages/Main/Modal';
+import RedirectPage from './App/pages/Redirect';
+import { store } from './App/store/index';
 
 const router = createBrowserRouter([
   {
@@ -18,12 +16,15 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/:itemID/',
         loader: appLoader,
-        errorElement: <ErrorPage />,
+        path: '/:itemID/',
         element: <Modal />,
       },
     ],
+  },
+  {
+    path: 'redirect',
+    element: <RedirectPage />,
   },
 ]);
 
@@ -36,17 +37,3 @@ root.render(
     </React.StrictMode>
   </Provider>
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-

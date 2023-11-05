@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 ul {
@@ -14,21 +14,20 @@ html {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 #root {
-  overflow-x: hidden;
   position: relative;
-  text-align: center;
-
+  overflow-x: hidden;
   min-height: 100vh;
   min-height: 100dvh;
-  background-image: url(./BACK.jpg);
   background-color: black;
-  background-repeat: no-repeat;
+  background-image: url("./BACK.jpg");
   background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 body {
@@ -36,17 +35,18 @@ body {
   font-family: 'Alfa Slab One', cursive;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .App,
 .error {
+  max-width: 660px;
   margin: 0 auto;
   padding: 0 10px;
-  max-width: 660px;
 }
 
 .image-item {
   overflow: hidden;
-  transform: scale(1);
   transition: all 1s ease-in-out;
+  transform: scale(1);
 }
 
 .image-item:hover img {

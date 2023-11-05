@@ -1,21 +1,16 @@
-
+import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import About from './About';
-import './App.scss';
-import Contact from './Contact';
-import Footer from './Footer';
-import Header from './Header';
-import Modal from './Modal';
-import Portfolio from './Portfolio';
-import '@fontsource/alfa-slab-one';
+import { Outlet } from 'react-router-dom';
 import { Box } from '@mui/material';
+import About from './pages/Main/About';
+import './App.scss';
+import Contact from './pages/Main/Contact';
+import Footer from './pages/Main/Footer';
+import Header from './pages/Main/Header';
+import Portfolio from './pages/Main/Portfolio';
+import '@fontsource/alfa-slab-one';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
-import { BrowserRouter, Route, Routes, useLoaderData } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { RootState } from './store';
-import { Outlet } from 'react-router-dom';
-import { itemsList } from './fixtures';
 
 // ЭТО ROOT
 
@@ -77,10 +72,8 @@ const theme = createTheme({
   },
 });
 
-
 // .css-4pp0nb-MuiPaper-root-MuiDialog-paper
 function App() {
-
   //  const isOpen = useSelector((state: RootState) => state.modal.isOpen);
   return (
     <ThemeProvider theme={theme}>
