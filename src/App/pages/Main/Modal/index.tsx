@@ -51,7 +51,7 @@ export default function Modal(): JSX.Element {
             cursor: 'pointer',
           }}
         >
-          <CloseIcon sx={{ bgcolor: 'transparent', color: 'white' }} />
+          <CloseIcon sx={{ bgcolor: 'transparent', color: 'white', fontSize: '32px' }} />
         </Box>
         <Box sx={{ bgcolor: 'black' }} component='div'>
           <Card key={link}>

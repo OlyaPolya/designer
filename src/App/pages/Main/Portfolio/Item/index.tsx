@@ -33,10 +33,7 @@ function Item({ itemID }: ItemProp) {
   };
 
   const goToRedirectPage = () => {
-    const a = document.createElement('a');
-    a.target = '_blank';
-    a.href = link;
-    a.click();
+    window.location.href = link;
   };
 
   const handleClick = (): void => {
