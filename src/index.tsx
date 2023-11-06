@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         loader: appLoader,
-        path: '/:itemID/',
+        path: ':itemID/',
         element: <Modal />,
       },
     ],
