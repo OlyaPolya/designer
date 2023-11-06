@@ -12,8 +12,6 @@ import '@fontsource/alfa-slab-one';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 
-// ЭТО ROOT
-
 const theme = createTheme({
   palette: {
     primary: {
