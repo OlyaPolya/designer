@@ -1,5 +1,4 @@
 // 1 rows == 1 cols == 142px
-
 const itemsList = [
   {
     img: './SAMPLE_PICTURES/blackwood.jpg',
