@@ -39,16 +39,6 @@ const theme = createTheme({
         maxWidth: false,
       },
     },
-
-    // MuiIconButton: {
-    //   styleOverrides: {
-    //     root: {
-    //       '&:hover': {
-    //         backgroundColor: 'pink',
-    //       },
-    //     },
-    //   },
-    // },
     MuiPaper: {
       styleOverrides: {
         root: {
@@ -70,9 +60,7 @@ const theme = createTheme({
   },
 });
 
-// .css-4pp0nb-MuiPaper-root-MuiDialog-paper
 function App() {
-  //  const isOpen = useSelector((state: RootState) => state.modal.isOpen);
   return (
     <ThemeProvider theme={theme}>
       <Box className='App'>
