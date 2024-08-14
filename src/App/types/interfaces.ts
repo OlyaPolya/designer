@@ -11,3 +11,7 @@ export interface Item extends State {
   rows: number;
   cols: number;
 }
+
+export type ItemProp = {
+  itemID: number;
+};

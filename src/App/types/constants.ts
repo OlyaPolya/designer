@@ -1,4 +1,4 @@
-const PORTFOLIO = {
+export const PORTFOLIO = {
   CELL: {
     HEIGHT: 142,
     WIDTH: 142,
@@ -16,4 +16,4 @@ const PORTFOLIO = {
   },
 };
 
-export default PORTFOLIO;
+export const MOBILE_BREAK_POINT = 640;

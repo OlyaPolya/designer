@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import ErrorPage from './App/pages/Error';
-import Modal, { loader as appLoader } from './App/pages/Main/Modal';
+import ErrorPage from './App/components/Error';
+import Modal, { loader as appLoader } from './App/components/Modal';
 
 const router = createBrowserRouter([
   {

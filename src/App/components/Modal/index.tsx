@@ -9,7 +9,7 @@ import { Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link, LoaderFunction, useLoaderData } from 'react-router-dom';
-import itemsList from '../../../fixtures';
+import itemsList from '../../types/fixtures';
 
 export const loader: LoaderFunction = async ({ params }) => {
   const id = Number(params.itemID);

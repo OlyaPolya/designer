@@ -2,13 +2,10 @@ import React, { useState } from 'react';
 import ImageListItem from '@mui/material/ImageListItem';
 import { ImageListItemBar } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { srcset } from '../utils';
-import PORTFOLIO from '../constants';
-import itemsList from '../../../../fixtures';
-
-type ItemProp = {
-  itemID: number;
-};
+import { srcset } from '../../../helpers';
+import { PORTFOLIO } from '../../../types/constants';
+import itemsList from '../../../types/fixtures';
+import { ItemProp } from '../../../types/interfaces';
 
 // 1 rows == 1 cols == 142px
 

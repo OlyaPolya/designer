@@ -2,10 +2,8 @@ import ImageList from '@mui/material/ImageList';
 import { Box } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import Item from './Item';
-import PORTFOLIO from './constants';
-import itemsList from '../../../fixtures';
-
-const MOBILE_BREAK_POINT = 640;
+import { MOBILE_BREAK_POINT, PORTFOLIO } from '../../types/constants';
+import itemsList from '../../types/fixtures';
 
 export default function Portfolio(): JSX.Element {
   const getTableOption = (width: number) => {
