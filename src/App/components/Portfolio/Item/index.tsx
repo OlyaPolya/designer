@@ -33,7 +33,7 @@ function Item({ itemID }: ItemProp) {
     window.location.href = link;
   };
 
-  const handleClick = (): void => {
+  const goToPage = (): void => {
     if (link.indexOf('http') === 0) {
       goToRedirectPage();
     } else if (link.length > 0) {
@@ -55,7 +55,7 @@ function Item({ itemID }: ItemProp) {
       }}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
-      onClick={handleClick}
+      onClick={goToPage}
     >
       <img
         // eslint-disable-next-line react/jsx-props-no-spreading

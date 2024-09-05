@@ -12,6 +12,7 @@ import '@fontsource/alfa-slab-one';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import appTheme from './types/theme';
+import Showreel from './components/Showreel';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </header>
         <main>
           <About />
+          <Showreel />
           <Portfolio />
           <Contact />
         </main>

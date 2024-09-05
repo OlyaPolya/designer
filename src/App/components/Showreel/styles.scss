@@ -1,0 +1,35 @@
+.showreel {
+  margin-bottom: 16px;
+  border-radius: 32px;
+  cursor: pointer;
+
+  &__video {
+    max-height: 85vh;
+    cursor: pointer;
+  }
+
+  &__picture {
+    height: 100%;
+    border-radius: 32px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 22px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--active {
+      display: none;
+    }
+  }
+}

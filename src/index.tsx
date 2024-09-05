@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import ErrorPage from './App/components/Error';
 import Modal, { loader as appLoader } from './App/components/Modal';
+import ShowreelModal from './App/components/Showreel/ShowreelModal';
 
 const router = createBrowserRouter([
   {
@@ -12,10 +13,15 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+
       {
         loader: appLoader,
         path: ':itemID/',
         element: <Modal />,
+      },
+      {
+        path: 'showreel/',
+        element: <ShowreelModal />,
       },
     ],
   },
