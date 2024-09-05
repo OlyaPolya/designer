@@ -7,25 +7,30 @@ import ErrorPage from './App/components/Error';
 import Modal, { loader as appLoader } from './App/components/Modal';
 import ShowreelModal from './App/components/Showreel/ShowreelModal';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      errorElement: <ErrorPage />,
+      children: [
 
-      {
-        loader: appLoader,
-        path: ':itemID/',
-        element: <Modal />,
-      },
-      {
-        path: 'showreel/',
-        element: <ShowreelModal />,
-      },
-    ],
-  },
-]);
+        {
+          loader: appLoader,
+          path: ':itemID/',
+          element: <Modal />,
+        },
+        {
+          path: 'showreel/',
+          element: <ShowreelModal />,
+        },
+      ],
+    },
+  ],
+  {
+    basename: '/rus/',
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

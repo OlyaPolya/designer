@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-
+// import { red } from '../../../public/fonts/';
 const appTheme = createTheme({
   palette: {
     primary: {
@@ -10,16 +10,19 @@ const appTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Alfa Slab One, Roboto',
+    allVariants: {
+      fontFamily: 'DelaGothicOne',
+    }
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
-          font-family: 'Alfa Slab One, Roboto';
+          font-family: 'DelaGothicOne';
           font-style: sans-serif;
           font-display: swap;
           font-weight: 400;
+          src: url("../../../public/fonts/DelaGothicOne-Regular.ttf");
         }`,
     },
     MuiDialog: {

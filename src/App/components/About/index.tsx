@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
@@ -19,9 +20,7 @@ function About() {
           marginBottom: '20px',
         }}
       >
-        Great Display&nbsp;Ads
-        <br />
-        Motion Designer
+        HTML5-баннеры экспертного уровня
       </Typography>
       <Typography
         sx={{
@@ -32,15 +31,9 @@ function About() {
           fontFamily: 'Roboto',
         }}
       >
-        Hello, I&apos;m Vitaly Polyansky and I&apos;m an expert in creating
-        animated HTML5 Display Ads. I&apos;m trusted to work on
-        master-animations for many of Top100 USA brands, TV Channels and AAA+
-        games. Solid 17 years experience, accuracy and quick turnaround are my
-        core strengths. Will be happy to help your in resolving your business
-        needs. Feel&nbsp;free&nbsp;to&nbsp;
-        <a href='#contacts' style={{ color: '#bc4ad7' }}>
-          get&nbsp;in&nbsp;touch&nbsp;with&nbsp;me.
-        </a>
+        Приветствую, меня зовут Виталий Полянский, и я эксперт в создании анимированных HTML5-баннеров. Мне повезло иметь большой опыт работы над мастер-анимациями рекламы для многих максимально известных компании США, телеканалов и игр AAA+. Солидный 17-летний опыт работы, ответственность, точность и скорость - мои ключевые достоинства. Буду рад помочь вам в решении ваших бизнес-задач. Взгляните на некоторые из работ моего публичного портфолио и
+        <a href='#contacts' style={{ color: '#bc4ad7' }}>&nbsp;напишите мне,&nbsp;</a>
+        чтобы узнать больше.
       </Typography>
     </Box>
   );

@@ -1,10 +1,15 @@
+@font-face {
+  font-weight: 400;
+  font-family: DelaGothicOne;
+  src: url("../public/fonts/DelaGothicOne-Regular.ttf");
+}
 
 body {
   margin: 0;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: DelaGothicOne, cursive;
 
 }
 
 code {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: DelaGothicOne, cursive;
 }

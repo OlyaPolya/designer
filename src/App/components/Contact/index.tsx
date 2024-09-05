@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
@@ -20,17 +21,13 @@ function Contact() {
         sx={{ color: 'white', textAlign: 'left' }}
         id='contacts'
       >
-        Get in touch with me
+        Контакты
       </Typography>
       <Typography sx={style}>
-        In the last years I have helped hundreds of clients to turn their static
-        advertising mock ups into professionally animated display ads which
-        attract attention, deliver a message and resolve business needs. And
-        that&apos;s what I&apos;m passionate about.
+        За последние годы я помог многим компаниям превратить статичные рекламные макеты в профессионально анимированную рекламу, которая привлекают внимание пользователей и эффективно решает задачи бизнеса.
       </Typography>
       <Typography sx={style}>
-        You are welcome with any details request by
-        {' '}
+        Любые подробности вы можете узнать написав мне &nbsp;
         <Box
           component='span'
           sx={{ color: '#bc4ad7', textDecoration: 'underline' }}

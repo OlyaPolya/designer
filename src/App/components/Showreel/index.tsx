@@ -23,7 +23,7 @@ export default function Showreel(): JSX.Element {
   }, [isMobile]);
 
   const goToShowreelPage = () => {
-    navigate('showreel');
+    navigate('/showreel');
   };
 
   return (

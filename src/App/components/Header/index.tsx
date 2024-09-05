@@ -4,8 +4,8 @@ import Toolbar from '@mui/material/Toolbar';
 import { Box, Typography } from '@mui/material';
 
 export const SITE_SECTIONS = [
-  { title: 'Portfolio', color: '#bc4ad7', href: '#portfolio' },
-  { title: 'Contacts', color: '#ffffff', href: '#contacts' },
+  { title: 'Портфолио', color: '#bc4ad7', href: '#portfolio' },
+  { title: 'Контакты', color: '#ffffff', href: '#contacts' },
 ];
 
 function Header() {
